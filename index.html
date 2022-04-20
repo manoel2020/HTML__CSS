@@ -15,15 +15,24 @@
   <body>
     <!-- Inicio Header -->
     <header class="header">
-      <div class="header-content">
-        <div class="logo">
+      <div class="content">
+        <div class="logo fl-left">
           <a href="#">
             <img src="images/logo.png" alt="HTML e CSS Pro" />
           </a>
         </div>
       </div>
 
+      <a href="#" class="nav-toggle fl-right" onclick="AbrirFecharMenu()">
+        <i class="fas fa-bars"></i> MENU
+      </a>
+
       <div class="nav">
+        <p class="text-right">
+          <span class="nav-close" onclick="AbrirFecharMenu()">
+            <i class="fas fa-times"></i>
+          </span>
+        </p>
         <ul>
           <li><a href="#">Barcos e Lanchas</a></li>
           <li><a href="#">Destaques</a></li>
@@ -70,5 +79,7 @@
       </div>
     </section>
     <!-- Fim Pesquisa -->
+
+    <script src="js/Script.js"></script>
   </body>
 </html>
